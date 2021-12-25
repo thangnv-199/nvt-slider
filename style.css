@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    padding: 0 10px;
+}
+
+.item .link {
+    height: 300px;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    background-color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+}
