@@ -9,6 +9,8 @@ function createSlider(slider, options) {
                 dotClass: null,
                 arrows: true,
                 arrowsColor: null,
+                prevArrow: 'prev',
+                nextArrow: 'next',
                 prevArrowClass: null,
                 nextArrowClass: null,
                 slidesToShow: 1,
@@ -18,8 +20,6 @@ function createSlider(slider, options) {
                 autoplaySpeed: 2000,
                 draggable: true,
                 pauseOnHover: false,
-                prevArrow: 'prev',
-                nextArrow: 'next',
                 initialSlide: 0,
                 fade: false,
                 fadeSpeed: 400,
@@ -27,7 +27,7 @@ function createSlider(slider, options) {
                 appendDots: null,
                 appendArrows: null,
                 responsive: null,
-                ...options,
+                ...options
             };
 
             const {
@@ -462,6 +462,14 @@ function createSlider(slider, options) {
                 this.slider.appendChild(this.children[i]);
             }
 
+            if (this.options.appendArrows) {
+                this.prevArrow.remove();
+                this.nextArrow.remove();
+            }
+            if (this.options.appendDots) {
+                this.dotsGroup.remove();
+            }
+
             this.checkOptions();
             this.sliderTrack = null;
             this.sliderList = null;
@@ -477,14 +485,7 @@ function createSlider(slider, options) {
             this.scrollDefaults = 0;
 
             !this.options.autoplay && this.pause();
-            if (this.options.appendArrows) {
-                this.options.appendArrows.querySelectorAll('.nvt-arrow').forEach(arrow => {
-                    arrow.remove();
-                });
-            }
-            if (this.options.appendDots) {
-                this.options.appendDots.querySelector('.nvt-dots').remove();
-            }
+            
 
             this.checkResponsive();
             this.init();
