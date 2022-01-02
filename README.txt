@@ -1,7 +1,7 @@
 
 
 
-![slider-options-default](https://user-images.githubusercontent.com/85724251/147883435-0268fe88-617b-423d-b38e-bf18baef381f.png)
+![](images/slider-example.png)
 
 
 ###
