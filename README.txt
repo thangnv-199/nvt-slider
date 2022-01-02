@@ -1,7 +1,7 @@
 
 
 
-![](images/slider-example.png)
+![Screenshot](https://github.com/thangnv-199/nvt-slider/blob/master/images/slider-options-default.png)
 
 
 ###
