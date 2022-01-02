@@ -1,6 +1,8 @@
 
-###
-![Screenshot](https://github.com/thangnv-199/nvt-slider/blob/master/images/example-1.png)
+
+
+![slider-options-default](https://user-images.githubusercontent.com/85724251/147883435-0268fe88-617b-423d-b38e-bf18baef381f.png)
+
 
 ###
 ![Screenshot](../master/images/slider-example.png)
