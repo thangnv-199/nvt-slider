@@ -137,6 +137,20 @@ const app = {
             })
         });
 
+        document.querySelector('.row-decrease').addEventListener('click', () => {
+            this.slider.setOption({
+                rows: this.slider.getOption('rows') - 1 || 1,
+            })
+            this.setUI();
+        })
+
+        document.querySelector('.row-increase').addEventListener('click', () => {
+            this.slider.setOption({
+                rows: this.slider.getOption('rows') + 1,
+            })
+            this.setUI();
+        })
+
         
         let timeout;
         window.addEventListener('resize', () => {
@@ -155,24 +169,24 @@ const app = {
             slidesToShow: 4,
             slidesToScroll: 4,
             initialSlide: 0,
-            rows: 2,
+            rows: 1,
             dots: true,
-            dotsColor: 'blue',
-            dotsClass: '   dots-container    fsdds gffdgdf    ',
-            dotClass: 'dot-item fsdfs fdf',
+            // dotsColor: 'blue',
+            // dotsClass: '   dots-container    fsdds gffdgdf    ',
+            // dotClass: 'dot-item fsdfs fdf',
             arrows: true,
-            arrowsColor: 'blue',
-            prevArrow: `<i class="fas fa-long-arrow-alt-left"></i>`,
-            prevArrowClass: '123   fds  fsdf   ',
-            nextArrow: `<i class="fas fa-long-arrow-alt-right"></i>`,
-            nextArrowClass: 'qqq  ffds     ',
-            fade: true,
-            fadeSpeed: 1000,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            pauseOnHover: true,
-            appendDots: document.querySelector('.dots-sideout'),
-            appendArrows: document.querySelector('.arrows-sideout'),
+            // arrowsColor: 'blue',
+            // prevArrow: `<i class="fas fa-long-arrow-alt-left"></i>`,
+            // prevArrowClass: '123   fds  fsdf   ',
+            // nextArrow: `<i class="fas fa-long-arrow-alt-right"></i>`,
+            // nextArrowClass: 'qqq  ffds     ',
+            fade: false,
+            // fadeSpeed: 1000,
+            // autoplay: true,
+            // autoplaySpeed: 3000,
+            // pauseOnHover: true,
+            // appendDots: document.querySelector('.dots-sideout'),
+            // appendArrows: document.querySelector('.arrows-sideout'),
             callback: function () {
                 console.log('moved');
             },

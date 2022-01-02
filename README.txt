@@ -1,40 +1,48 @@
 
-Các option : 
+###
+![Screenshot](../master/images/slider-options-default.png)
+
+###
+![Screenshot](../master/images/slider-example.png)
+
+
+
+# Chi tiết các option : 
 
 - infinite: Chạy vô hạn không có điểm dừng;
 Type: boolean;
 Default: false;
 
 - slidesToShow: số item hiển thị;
-Type: number;
+Type: int;
 Default: 1;
 
 - slidesToScroll: số item trượt mỗi lần cuộn;
-Type: number;
+Type: int;
 Default: 1;
 
 - rows: set số hàng;
-Type: number;
+Type: int;
 Default: 1;
 
 - autoplay: tự động cuộn;
 Type: boolean;
 Default: false;
 
-- autoplaySpeed: đặt thời gian mỗi lần cuộn;
-Type: number (ms);
+- autoplaySpeed: đặt thời gian tự động cuộn;
+Type: int (ms);
 Default: 10000;
 
 - pauseOnHover: tạm dừng tự động cuộn khi hover;
 Type: boolean;
 Default: false;
 
-- draggable: Bật tính năng kéo chuột;
+- draggable: Bật tính năng kéo chuột để cuộn;
 Type: boolean;
 Default: false;
 
 - initialSlide: set vị trí mặc định của slider;
-Type: number;
+Type: int;
 Default: 0;
 
 - fade: thay hoạt ảnh trượt thành fade;
@@ -42,7 +50,7 @@ Type: boolean;
 Default: false;
 
 - fadeSpeed: set thời gian hoạt ảnh fade;
-Type: number (ms);
+Type: int (ms);
 Default: 400; 
 
 - callback: function được gọi mỗi khi slider di chuyển;
@@ -65,7 +73,7 @@ Default: empty;
 Type: string;
 Default: empty;
 
-- appendDots: gắn dots vào vị trí chỉ định;
+- appendDots: gắn dots vào vị trí (element) chỉ định;
 Type: element;
 Default: slider-nav;
 
@@ -98,11 +106,36 @@ Type: element;
 Default: slider-nav;
 
 - responsive: 1 mảng các đối tượng chứa breakpoint và settings tương ứng;
-Type: boolean;
-Default: false;
-Example: responsive: [{
-    breakpoint: 1023, //break point use max-width
-    settings: {
-        // ...options
-    }
-}]
+Type: array;
+Default: null;
+![Screenshot](../master/images/example-3.png)
+
+
+
+# Chi tiết các Method
+
+- currentSlide : trả về chỉ số hiện tại của slider
+Arguments: none;
+
+- goTo : đi tới trang chỉ định;
+Arguments: int; 
+
+- prev : đi tới trang trước đó;
+Arguments: none;
+
+- next : đi tới trang tiếp theo;
+Arguments: none;
+
+- play : bật tính năng tự động cuộn;
+Arguments: none;
+
+- pause : dừng tính năng tự động cuộn;
+Arguments: none;
+
+- getOption : trả về value của option;
+Arguments: string : option name;
+![Screenshot](../master/images/example-2.png)
+
+- setOption : đặt giá trị cho option
+Arguments: object : chứa các key value là tên và giá trị của option;
+![Screenshot](../master/images/example-1.png)
