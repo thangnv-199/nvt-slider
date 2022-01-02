@@ -11,133 +11,133 @@
 
 # Chi tiết các option : 
 
-- infinite: Chạy vô hạn không có điểm dừng;
-Type: boolean;
-Default: false;
+- infinite: Chạy vô hạn không có điểm dừng; <br>
+Type: boolean;<br>
+Default: false;<br>
 
-- slidesToShow: số item hiển thị;
-Type: int;
-Default: 1;
+- slidesToShow: số item hiển thị;<br>
+Type: int;<br>
+Default: 1;<br>
 
-- slidesToScroll: số item trượt mỗi lần cuộn;
-Type: int;
-Default: 1;
+- slidesToScroll: số item trượt mỗi lần cuộn;<br>
+Type: int;<br>
+Default: 1;<br>
 
-- rows: set số hàng;
-Type: int;
-Default: 1;
+- rows: set số hàng;<br>
+Type: int;<br>
+Default: 1;<br>
 
-- autoplay: tự động cuộn;
-Type: boolean;
-Default: false;
+- autoplay: tự động cuộn;<br>
+Type: boolean;<br>
+Default: false;<br>
 
-- autoplaySpeed: đặt thời gian tự động cuộn;
-Type: int (ms);
-Default: 10000;
+- autoplaySpeed: đặt thời gian tự động cuộn;<br>
+Type: int (ms);<br>
+Default: 10000;<br>
 
-- pauseOnHover: tạm dừng tự động cuộn khi hover;
-Type: boolean;
-Default: false;
+- pauseOnHover: tạm dừng tự động cuộn khi hover;<br>
+Type: boolean;<br>
+Default: false;<br>
 
-- draggable: Bật tính năng kéo chuột để cuộn;
-Type: boolean;
-Default: false;
+- draggable: Bật tính năng kéo chuột để cuộn;<br>
+Type: boolean;<br>
+Default: false;<br>
 
-- initialSlide: set vị trí mặc định của slider;
-Type: int;
-Default: 0;
+- initialSlide: set vị trí mặc định của slider;<br>
+Type: int;<br>
+Default: 0;<br>
 
-- fade: thay hoạt ảnh trượt thành fade;
-Type: boolean;
-Default: false;
+- fade: thay hoạt ảnh trượt thành fade;<br>
+Type: boolean;<br>
+Default: false;<br>
 
-- fadeSpeed: set thời gian hoạt ảnh fade;
-Type: int (ms);
-Default: 400; 
+- fadeSpeed: set thời gian hoạt ảnh fade;<br>
+Type: int (ms);<br>
+Default: 400; <br>
 
-- callback: function được gọi mỗi khi slider di chuyển;
-Type: function;
-Default: empty;
+- callback: function được gọi mỗi khi slider di chuyển;<br>
+Type: function;<br>
+Default: empty;<br>
 
-- dots: Tạo các chấm tròn;
-Type: boolean;
-Default: true
+- dots: Tạo các chấm tròn;<br>
+Type: boolean;<br>
+Default: true<br>
 
-- dotsColor: set màu mặc định cho các chấm tròn;
-Type: string;
-Default: empty;
+- dotsColor: set màu mặc định cho các chấm tròn;<br>
+Type: string;<br>
+Default: empty;<br>
 
-- dotsClass: thêm class cho thẻ chứa tất cả các dot (dùng để css hoặc có thể css theo class mặc định);
-Type: string;
-Default: empty;
+- dotsClass: thêm class cho thẻ chứa tất cả các dot (dùng để css hoặc có thể css theo class mặc định);<br>
+Type: string;<br>
+Default: empty;<br>
 
-- dotsClass: thêm class cho các dot con (dùng để css hoặc có thể css theo class mặc định);
-Type: string;
-Default: empty;
+- dotsClass: thêm class cho các dot con (dùng để css hoặc có thể css theo class mặc định);<br>
+Type: string;<br>
+Default: empty;<br>
 
-- appendDots: gắn dots vào vị trí (element) chỉ định;
-Type: element;
-Default: slider-nav;
+- appendDots: gắn dots vào vị trí (element) chỉ định;<br>
+Type: element;<br>
+Default: slider-nav;<br>
 
-- arrows: tạo các button điều khiển;
-Type: boolean;
-Default: true;
+- arrows: tạo các button điều khiển;<br>
+Type: boolean;<br>
+Default: true;<br>
 
-- arrowsColor: set màu mặc định cho các button;
-Type: string;
-Default: empty;
+- arrowsColor: set màu mặc định cho các button;<br>
+Type: string;<br>
+Default: empty;<br>
 
-- prevArrow: Chèn nội dung (icon) vào button previous ;
-Type: string;
-Default: 'prev';
+- prevArrow: Chèn nội dung (icon) vào button previous ;<br>
+Type: string;<br>
+Default: 'prev';<br>
 
-- nextArrow: Chèn nội dung (icon) vào button next;
-Type: string;
-Default: 'next';
+- nextArrow: Chèn nội dung (icon) vào button next;<br>
+Type: string;<br>
+Default: 'next';<br>
 
-- prevArrowClass: thêm class vào button prev (dùng để css hoặc có thể css theo class mặc định);
-Type: string;
-Default: empty;
+- prevArrowClass: thêm class vào button prev (dùng để css hoặc có thể css theo class mặc định);<br>
+Type: string;<br>
+Default: empty;<br>
 
-- nextArrowClass: thêm class vào button next (dùng để css hoặc có thể css theo class mặc định);
-Type: string;
-Default: empty;
+- nextArrowClass: thêm class vào button next (dùng để css hoặc có thể css theo class mặc định);<br>
+Type: string;<br>
+Default: empty;<br>
 
-- appendArrows: gắn arrows vào vị trí (element) chỉ định;
-Type: element;
-Default: slider-nav;
+- appendArrows: gắn arrows vào vị trí (element) chỉ định;<br>
+Type: element;<br>
+Default: slider-nav;<br>
 
-- responsive: 1 mảng các đối tượng chứa breakpoint và settings tương ứng;
-Type: array;
-Default: null;
+- responsive: 1 mảng các đối tượng chứa breakpoint và settings tương ứng;<br>
+Type: array;<br>
+Default: null;<br>
 ![Screenshot](../master/images/example-3.png)
 
 
 
 # Chi tiết các Method
 
-- currentSlide : trả về chỉ số hiện tại của slider
-Arguments: none;
+- currentSlide : trả về chỉ số hiện tại của slider<br>
+Arguments: none;<br>
 
-- goTo : đi tới trang chỉ định;
-Arguments: int; 
+- goTo : đi tới trang chỉ định;<br>
+Arguments: int; <br>
 
-- prev : đi tới trang trước đó;
-Arguments: none;
+- prev : đi tới trang trước đó;<br>
+Arguments: none;<br>
 
-- next : đi tới trang tiếp theo;
-Arguments: none;
+- next : đi tới trang tiếp theo;<br>
+Arguments: none;<br>
 
-- play : bật tính năng tự động cuộn;
-Arguments: none;
+- play : bật tính năng tự động cuộn;<br>
+Arguments: none;<br>
 
-- pause : dừng tính năng tự động cuộn;
-Arguments: none;
+- pause : dừng tính năng tự động cuộn;<br>
+Arguments: none;<br>
 
-- getOption : trả về value của option;
-Arguments: string : option name;
+- getOption : trả về value của option;<br>
+Arguments: string : option name;<br>
 ![Screenshot](../master/images/example-2.png)
 
-- setOption : đặt giá trị cho option
-Arguments: object : chứa các key value là tên và giá trị của option;
+- setOption : đặt giá trị cho option;<br>
+Arguments: object : chứa các key value là tên và giá trị của option;<br>
 ![Screenshot](../master/images/example-1.png)
