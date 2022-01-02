@@ -1,6 +1,6 @@
 
 ###
-![Screenshot](../master/images/slider-options-default.png)
+[Screenshot](images/slider-options-default.png)
 
 ###
 ![Screenshot](../master/images/slider-example.png)
