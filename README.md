@@ -1,11 +1,12 @@
-
-
-
-![Screenshot](https://github.com/thangnv-199/nvt-slider/blob/master/images/slider-options-default.png)
+###
+<strong>Cách sử dụng: copy 2 file trong thư mục minify sau đó link vào thẻ head;<strong>
 
 
 ###
 ![Screenshot](../master/images/slider-example.png)
+
+###
+![Screenshot](https://github.com/thangnv-199/nvt-slider/blob/master/images/slider-options-default.png)
 
 
 
