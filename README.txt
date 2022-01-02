@@ -1,6 +1,6 @@
 
 ###
-[Screenshot](https://github.com/thangnv-199/nvt-slider/blob/master/images/example-1.png)
+![Screenshot](https://github.com/thangnv-199/nvt-slider/blob/master/images/example-1.png)
 
 ###
 ![Screenshot](../master/images/slider-example.png)
