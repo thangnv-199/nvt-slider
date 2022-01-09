@@ -91,7 +91,7 @@ function createSlider(slider, options) {
             this.sliderTrack.appendChild(this.sliderList);
             this.slider.appendChild(this.sliderTrack);
             this.slider.appendChild(this.nav);
-            this.sliderItems = document.querySelectorAll('.nvt-item');
+            this.sliderItems = this.slider.querySelectorAll('.nvt-item');
             this.length = Math.ceil((this.sliderItems.length - this.options.slidesToShow) / this.options.slidesToScroll) + 1;
             this.sliderTrack.scrollLeft = this.move * this.currentIndex;
             this.itemWidth = this.sliderTrack.offsetWidth / this.options.slidesToShow;
@@ -251,7 +251,6 @@ function createSlider(slider, options) {
             } 
             else if (this.currentIndex < 0) {
                 this.isDelay = true;
-                console.log(this.scrollDefaults - (this.itemWidth * (this.sliderItems.length % this.options.slidesToShow) ));
                 
                 this.sliderTrack.scroll({
                     left: this.scrollDefaults - (this.itemWidth * ((this.sliderItems.length % this.options.slidesToShow) || this.options.slidesToShow ) ),
